@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Multimedia Rich Webpage</title>
+</head>
+<body>
+    <div class="container-main">
+        <div class="container">
+            <h1>Audio Player</h1>
+            <audio controls>
+                <source src="Canon in D - Pachelbel.mp3" type="audio/mp3">
+                Your Browser does not support the audio element
+            </audio>
+        </div>
+        <div class="container">
+            <h1>Video Player</h1>
+            <video controls poster="ceembl.png" width="300px" height="200px">
+                <source src="When_your_code_doesn_t_work720P_HD.mp4" type="video/mp4">
+                <source src="When_your_code_doesn_t_work720P_HD.webm" type="video/webm">
+                Your browser does not support video tag.
+            </video>
+        </div>
+
+        <div class="container">
+            <form class="form">
+                <legend>Registration Form</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Full Name" name="name" value="">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter Your Email" id="email" name="email" value="" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value="" minlength="8" placeholder="Enter Your Password" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" value="" min="18" placeholder="Enter Your Age">
+                <div class="radio-group">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the <a href="/terms-and-conditions" target="_blank">Terms and Conditions</a>
+                    </label>
+                </div>
+                <button type="submit" value="submit" id="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
